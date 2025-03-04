@@ -53,3 +53,9 @@ ACPcars$Type = NULL
 pca_cars <- PCA(ACPcars)
 plot.PCA(pca_cars,choix = "var",axes = c(1,2))
 plot.PCA(pca_cars,choix = "ind",axes = c(1,2))
+############### MCA #######################################
+library(FactoMineR)
+data("hobbies")
+res = MCA(hobbies[,19:21])
+
+plot(res, choix = "ind", label = "var", cex = 1.2)
