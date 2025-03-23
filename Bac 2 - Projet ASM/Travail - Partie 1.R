@@ -121,4 +121,7 @@ graph_var <- fviz_pca_var(res_acp, axes = c(1,2), select.var = list(name = top6_
 mcdo_acp$Category <- mcdo$Category
 graph_ind <- fviz_pca_ind(res_acp, axes = c(1,2), habillage = as.factor(mcdo_acp$Category), label = "none")
 graph_ind
+#Nous voyons que les aliments de la catégorie Beef & Pork sont en bas au centre et sont distribués de maniere horizontale
+#Comme on avait dit, la composante 1 (horizontale) représente les aliments riches en graisses et caloriques
+#Nous pouvons déduire que les aliments de la catégorie Beef & Pork sont riches en graisses et caloriques
 
